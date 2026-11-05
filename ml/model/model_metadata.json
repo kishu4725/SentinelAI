@@ -1,0 +1,22 @@
+{
+    "model": "Isolation Forest",
+    "model_version": "v1.1.0",
+    "n_estimators": 100,
+    "contamination": 0.2,
+    "number_of_samples": 300,
+    "number_of_features": 12,
+    "features": [
+        "protocol_numeric",
+        "failed_attempts",
+        "auth_failure_ratio",
+        "session_duration",
+        "command_count",
+        "login_success_flag",
+        "is_login_event",
+        "is_http_event",
+        "transfer_burst_rate",
+        "endpoint_risk_depth",
+        "action_destructiveness",
+        "is_off_hours"
+    ]
+}

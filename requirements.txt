@@ -1,0 +1,30 @@
+# SentinelAI runtime dependencies (backend + ML + honeypot).
+# Install from the project root:  pip install -r requirements.txt
+
+# --- Backend API ---
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0        # [standard] adds the WebSocket support /api/ws/soc needs
+sqlalchemy>=2.0.0
+pydantic[email]>=2.0.0           # [email] pulls in email-validator (EmailStr in schemas/auth.py)
+pyjwt>=2.7.0
+bcrypt>=4.0.0                    # used directly by core/security.py
+psycopg2-binary>=2.9.0           # PostgreSQL driver (not needed if you use SQLite)
+python-dotenv>=1.0.0             # loads .env (config.py silently skips it if missing)
+
+# --- ML scoring (the backend imports these; without them it falls back to rules-only) ---
+# scikit-learn is pinned to the version the committed model was trained with (see ml/requirements.txt).
+scikit-learn==1.9.1
+joblib>=1.4.0
+pandas>=2.2.0
+numpy>=2.0.0
+
+# --- Honeypot ---
+flask>=3.0.0
+
+boto3>=1.34.0
+cryptography>=42.0.0
+python-multipart>=0.0.9
+
+boto3>=1.34.0
+cryptography>=42.0.0
+python-multipart>=0.0.9

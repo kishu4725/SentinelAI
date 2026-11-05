@@ -1,0 +1,3 @@
+"""
+SentinelAI Core Package
+"""

@@ -1,0 +1,20 @@
+{
+    "model_version": "v1.1.0",
+    "feature_count": 12,
+    "feature_names": [
+        "protocol_numeric",
+        "failed_attempts",
+        "auth_failure_ratio",
+        "session_duration",
+        "command_count",
+        "login_success_flag",
+        "is_login_event",
+        "is_http_event",
+        "transfer_burst_rate",
+        "endpoint_risk_depth",
+        "action_destructiveness",
+        "is_off_hours"
+    ],
+    "min_score": -0.15747746732773815,
+    "max_score": 0.07300033672674255
+}

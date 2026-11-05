@@ -1,0 +1,2 @@
+# Kept for compatibility. Single source of truth is the root requirements.txt.
+-r ../requirements.txt
